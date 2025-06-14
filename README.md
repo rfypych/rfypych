@@ -1,7 +1,7 @@
 # 👋 Hi there, I'm Rofikul Huda!
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Ethical+Hacker+%F0%9F%94%90;Web+Developer+%F0%9F%92%BB;Cybersecurity+Enthusiast+%F0%9F%9B%A1%EF%B8%8F;Problem+Solver+%F0%9F%A7%A9" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=GreenHat+Hacker+%F0%9F%94%90;Web+Developer+%F0%9F%92%BB;Cybersecurity+Enthusiast+%F0%9F%9B%A1%EF%B8%8F;Problem+Solver+%F0%9F%A7%A9" alt="Typing SVG" />
 </div>
 
 ## 🚀 About Me
