@@ -7,7 +7,7 @@
 ## 🚀 About Me
 
 ```bash
-root@matrix:~$ whoami
+root@rfypych:~$ whoami
 >> Aspiring Developer & Tech Enthusiast
 >> Passionate about Cybersecurity & Web Development
 >> Always learning, always growing, always exploring
@@ -18,7 +18,6 @@ root@matrix:~$ whoami
 - 👯 I'm looking to collaborate on **Open Source Projects** and **Security Research**
 - 💬 Ask me about **Ethical Hacking**, **Web Development**, or **Linux**
 - 📫 How to reach me: **[rfiklz.my.id](https://rfiklz.my.id)**
-- ⚡ Fun fact: I love exploring the **Matrix** of code and cybersecurity!
 
 ## 🛠️ Tech Stack
 
@@ -93,8 +92,6 @@ root@matrix:~$ whoami
 </div>
 
 <div align="center">
-  
-**"Welcome to the Matrix! 🚀"**
 
 *Crafted with passion by Rofikul Huda*
 
