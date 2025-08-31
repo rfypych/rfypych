@@ -9,7 +9,7 @@
 ```bash
 root@rfypych:~$ whoami
 >> Aspiring Developer & Tech Enthusiast
->> Passionate about Cybersecurity & Web Development
+>> Passionate about Cybersecurity, Web Development, and Machine Learning
 >> Always learning, always growing, always exploring
 ```
 
