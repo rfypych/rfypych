@@ -1,53 +1,24 @@
 <svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00bfff" />
-      <stop offset="100%" stop-color="#ff00aa" />
+    <style>
+      .text-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 600; font-size: 48px; fill: #ffffff; letter-spacing: -1px; }
+      .text-role { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; fill: #8b949e; letter-spacing: 0.5px; }
+      .glass { fill: #0d1117; fill-opacity: 0.6; stroke: #30363d; stroke-width: 1; }
+    </style>
+    <linearGradient id="glow" x1="0" y1="0" x2="800" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#00bfff" stop-opacity="0.1" />
+      <stop offset="0.7" stop-color="#ff00aa" stop-opacity="0.05" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00bfff" stroke-width="0.5" opacity="0.1"/>
-    </pattern>
-    <mask id="scanline">
-      <rect width="800" height="200" fill="white"/>
-      <rect width="800" height="2" fill="black" y="0">
-        <animate attributeName="y" from="-10" to="210" duration="4s" repeatCount="indefinite" />
-      </rect>
-    </mask>
   </defs>
 
-  <!-- Background Grid -->
-  <rect width="800" height="200" fill="#0d1117" />
-  <rect width="800" height="200" fill="url(#grid)" mask="url(#scanline)" />
+  <!-- Background with subtle gradient glow -->
+  <rect width="800" height="200" rx="24" fill="#0d1117" />
+  <rect width="800" height="200" rx="24" fill="url(#glow)" />
 
-  <!-- HUD Brackets -->
-  <path d="M 20 50 V 20 H 50" stroke="#00bfff" stroke-width="2" fill="none" />
-  <path d="M 780 50 V 20 H 750" stroke="#00bfff" stroke-width="2" fill="none" />
-  <path d="M 20 150 V 180 H 50" stroke="#00bfff" stroke-width="2" fill="none" />
-  <path d="M 780 150 V 180 H 750" stroke="#00bfff" stroke-width="2" fill="none" />
+  <!-- Glass border effect -->
+  <rect x="0.5" y="0.5" width="799" height="199" rx="23.5" stroke="#30363d" stroke-opacity="0.5" />
 
-  <!-- Center Text -->
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-weight="bold" font-size="60" fill="url(#gradText)" filter="url(#glow)">
-    ROFIKUL HUDA
-  </text>
-
-  <!-- Subtext -->
-  <text x="50%" y="75%" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="16" fill="#00bfff" letter-spacing="4" opacity="0.8">
-    SYSTEM ONLINE // COMMANDER
-  </text>
-
-  <!-- Decor elements -->
-  <circle cx="40" cy="100" r="2" fill="#ff00aa">
-     <animate attributeName="opacity" values="0;1;0" duration="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="760" cy="100" r="2" fill="#ff00aa">
-     <animate attributeName="opacity" values="0;1;0" duration="2s" repeatCount="indefinite" begin="1s"/>
-  </circle>
-
+  <!-- Content -->
+  <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" class="text-name">Rofikul Huda</text>
+  <text x="50%" y="70%" text-anchor="middle" dominant-baseline="middle" class="text-role">Web Developer & AI Enthusiast</text>
 </svg>

@@ -1,52 +1,63 @@
 <div align="center">
 
-  <img src="assets/header.svg" alt="Rofikul Huda HUD" width="100%" />
+<img src="assets/header.svg" alt="Rofikul Huda" width="100%" />
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Initializing+System...;Loading+Profile:+Commander+Rofikul;Target:+Full+Stack+Development;Status:+Online" alt="Typing SVG" />
-  </a>
+<br/><br/>
+
+<p align="center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; color: #8b949e; font-size: 16px;">
+  Crafting sophisticated web experiences with a touch of AI magic.<br/>
+  Focused on building modern, scalable applications and exploring the frontiers of Deep Learning.
+</p>
 
 </div>
 
 <img src="assets/separator.svg" width="100%" />
 
-### 📟 Mission Log
-
-```bash
-commander@rfypych:~$ whoami
-> Rofikul Huda
-> Freelance Web Developer & AI Enthusiast
-
-commander@rfypych:~$ cat mission_statement.txt
-> "Crafting sophisticated web experiences with a touch of AI magic."
-> Focused on: Modern Web Apps, AI Agents, Deep Learning.
-
-commander@rfypych:~$ locate location
-> Earth (Coordinates: Classified)
-
-commander@rfypych:~$ status
-> 🟢 Available for freelance commissions.
-```
-
-<img src="assets/separator.svg" width="100%" />
-
 <div align="center">
 
-### 📡 Telemetry Data
+<!-- Bento Grid Layout for Stats -->
+<table border="0" width="100%" cellspacing="10">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3 align="left">📊 GitHub Statistics</h3>
+      <a href="https://github.com/rfypych">
+        <img src="https://github-readme-stats.vercel.app/api?username=rfypych&show_icons=true&theme=transparent&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&icon_color=58a6ff&hide_border=true&count_private=true" alt="GitHub Stats" width="100%" />
+      </a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3 align="left">🔥 Streak</h3>
+      <a href="https://github.com/rfypych">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=rfypych&theme=transparent&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideNums=8b949e&sideLabels=8b949e&hide_border=true" alt="Streak Stats" width="100%" />
+      </a>
+      <br/><br/>
+      <h3 align="left">⚡ Top Languages</h3>
+      <a href="https://github.com/rfypych">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfypych&layout=compact&theme=transparent&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&hide_border=true" alt="Top Languages" width="100%" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-<!-- Stats Row 1 -->
-<a href="https://github.com/rfypych">
-  <img src="https://github-readme-stats.vercel.app/api?username=rfypych&show_icons=true&theme=transparent&bg_color=0d1117&title_color=00bfff&text_color=ffffff&icon_color=ff00aa&hide_border=true&count_private=true" alt="GitHub Stats" height="150" />
-</a>
-<a href="https://github.com/rfypych">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rfypych&theme=transparent&background=0d1117&ring=00bfff&fire=ff00aa&currStreakLabel=00bfff&sideNums=ffffff&sideLabels=ffffff&hide_border=true" alt="Streak Stats" height="150" />
-</a>
+</div>
 
 <br/>
 
-<!-- Stats Row 2: Top Langs -->
+<div align="center">
+
+<h3>🛠️ Technologies</h3>
+<br/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,python,html,css,tailwind,nodejs,express,mysql,postgres,git,docker,vscode&perline=15" alt="Tech Stack" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<h3>📈 Contribution Activity</h3>
+<br/>
 <a href="https://github.com/rfypych">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfypych&layout=compact&theme=transparent&bg_color=0d1117&title_color=00bfff&text_color=ffffff&hide_border=true" alt="Top Languages" />
+  <img src="http://ghchart.rshah.org/58a6ff/rfypych" alt="Contribution Graph" width="100%" />
 </a>
 
 </div>
@@ -55,50 +66,29 @@ commander@rfypych:~$ status
 
 <div align="center">
 
-### 🛠️ Ship Systems (Tech Stack)
+<!-- Marcus Aurelius Quote -->
+<blockquote style="font-family: Georgia, serif; font-style: italic; font-size: 18px; color: #c9d1d9; border-left: 4px solid #30363d; padding-left: 16px; margin: 20px auto; max-width: 600px;">
+  "You have power over your mind – not outside events. Realize this, and you will find strength."
+  <br/>
+  <span style="font-size: 14px; color: #8b949e; font-style: normal; margin-top: 10px; display: block;">— Marcus Aurelius</span>
+</blockquote>
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,python,react,nextjs,nodejs,laravel,php,mysql,postgres,git,linux,vscode,kali,sublime&perline=10" alt="Tech Stack" />
+<br/>
 
-</div>
-
-<img src="assets/separator.svg" width="100%" />
-
-<div align="center">
-
-### 🗺️ Flight Record
-
-<a href="https://github.com/rfypych">
-  <img src="http://ghchart.rshah.org/00bfff/rfypych" alt="Contribution Graph" width="100%" />
-</a>
-
-</div>
-
-<br />
-
-<div align="center">
-
-<!-- Connect -->
-<a href="https://rfiklz.vercel.app/">
-  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=0d1117" />
-</a>
-<a href="https://github.com/rfypych">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&color=0d1117" />
-</a>
-<a href="https://instagram.com/rfikl_">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=0d1117" />
-</a>
-<a href="mailto:rofikulhuda244@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=0d1117" />
-</a>
-
-<br /><br />
-
-<!-- Quote -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=0d1117&title_color=00bfff&text_color=ffffff&quote=The%20cosmos%20is%20within%20us.%20We%20are%20made%20of%20star-stuff.&author=Carl%20Sagan" alt="Quote" />
-
-<br />
-
-<!-- Profile Views -->
-<img src="https://komarev.com/ghpvc/?username=rfypych&color=00bfff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+<!-- Minimalist Social Links -->
+<p>
+  <a href="https://rfiklz.vercel.app/" style="text-decoration: none; margin: 0 10px;">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-black?style=flat&logo=vercel&logoColor=white&color=0d1117" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/rfypych" style="text-decoration: none; margin: 0 10px;">
+    <img src="https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github&logoColor=white&color=0d1117" alt="GitHub" />
+  </a>
+  <a href="https://instagram.com/rfikl_" style="text-decoration: none; margin: 0 10px;">
+    <img src="https://img.shields.io/badge/Instagram-Connect-black?style=flat&logo=instagram&logoColor=white&color=0d1117" alt="Instagram" />
+  </a>
+  <a href="mailto:rofikulhuda244@gmail.com" style="text-decoration: none; margin: 0 10px;">
+    <img src="https://img.shields.io/badge/Email-Contact-black?style=flat&logo=gmail&logoColor=white&color=0d1117" alt="Email" />
+  </a>
+</p>
 
 </div>
