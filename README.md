@@ -1,7 +1,7 @@
-# Rofikul Huda
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:374151&height=200&section=header&text=Rofikul%20Huda&fontSize=50&fontColor=9CA3AF&animation=fadeIn&fontAlignY=35&desc=Developer%20•%20Security%20Researcher%20•%20AI%20Enthusiast&descSize=16&descAlignY=55&descAlign=50" width="100%" alt="Header"/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=24&duration=3500&pause=1200&color=9CA3AF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Developer+%E2%80%A2+Security+Researcher+%E2%80%A2+AI+Enthusiast;Building+Digital+Experiences+with+Purpose" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=6B7280&center=true&vCenter=true&repeat=true&width=500&height=30&lines=Building+Digital+Experiences+with+Purpose" alt="Typing SVG" />
 </div>
 
 <div align="center">
