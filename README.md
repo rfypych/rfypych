@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:374151&height=200&section=header&text=Rofikul%20Huda&fontSize=50&fontColor=9CA3AF&animation=fadeIn&fontAlignY=35&desc=Developer%20•%20Security%20Researcher%20•%20AI%20Enthusiast&descSize=16&descAlignY=55&descAlign=50" width="100%" alt="Header"/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=6B7280&center=true&vCenter=true&repeat=true&width=500&height=30&lines=Building+Digital+Experiences+with+Purpose" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=400&size=18&duration=4000&pause=1500&color=6B7280&center=true&vCenter=true&repeat=true&width=550&height=30&lines=%E2%80%9CWhat+stands+in+the+way+becomes+the+way.%E2%80%9D" alt="Typing SVG" />
 </div>
 
 <div align="center">
