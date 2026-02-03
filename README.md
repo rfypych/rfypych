@@ -1,7 +1,7 @@
 # Rofikul Huda
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=24&duration=3500&pause=1200&color=9CA3AF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Developer+%E2%80%A2+Security+Researcher+%E2%80%A2+Problem+Solver;Building+Digital+Experiences+with+Purpose" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=24&duration=3500&pause=1200&color=9CA3AF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Developer+%E2%80%A2+Security+Researcher+%E2%80%A2+AI+Enthusiast;Building+Digital+Experiences+with+Purpose" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -19,18 +19,19 @@
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │  Name       : Rofikul Huda                                       │
-│  Role       : Developer & Security Enthusiast                    │
+│  Role       : Developer • Security & AI Enthusiast               │
 │  Location   : Indonesia                                          │
 │  —          : "Control what you can, accept what you cannot"     │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-I craft digital experiences where **functionality meets elegance**. My work spans from building scalable web applications to exploring the depths of cybersecurity. I believe in writing code that not only works but tells a story.
+I craft digital experiences where **functionality meets elegance**. My work spans from building scalable web applications, exploring the depths of cybersecurity, to experimenting with AI-powered solutions. I believe in writing code that not only works but tells a story.
 
 ### 🎯 Current Focus
 
 - **Web Development** — Creating modern, responsive applications with React & Next.js
 - **Security Research** — Exploring penetration testing methodologies and vulnerability analysis
+- **AI & Machine Learning** — Experimenting with LLMs, prompt engineering, and AI-assisted development
 - **Open Source** — Contributing to projects that make developers' lives easier
 - **Continuous Learning** — Always expanding my knowledge horizon
 
