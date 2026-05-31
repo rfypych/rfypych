@@ -1,23 +1,29 @@
-# Rofikul Huda
-**Developer • Security Researcher • AI Enthusiast**
+<h1 align="center">Rofikul Huda</h1>
 
-[![Website](https://img.shields.io/badge/rfiklz.my.id-1a1a2e?style=flat-square&logo=google-chrome&logoColor=9CA3AF)](https://rfiklz.my.id)
-[![Telegram](https://img.shields.io/badge/@rfyycrnge-1a1a2e?style=flat-square&logo=telegram&logoColor=9CA3AF)](https://t.me/rfyycrnge)
-[![Instagram](https://img.shields.io/badge/@rfikl__-1a1a2e?style=flat-square&logo=instagram&logoColor=9CA3AF)](https://www.instagram.com/rfikl_)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&duration=2500&pause=1000&color=9CA3AF&center=true&vCenter=true&lines=Developer;Security+Researcher;AI+Enthusiast" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <a href="https://rofikul.vercel.app"><img src="https://img.shields.io/badge/rofikul.vercel.app-1a1a2e?style=flat-square&logo=google-chrome&logoColor=9CA3AF" alt="Website" /></a>
+  <a href="https://t.me/rfyycrnge"><img src="https://img.shields.io/badge/@rfyycrnge-1a1a2e?style=flat-square&logo=telegram&logoColor=9CA3AF" alt="Telegram" /></a>
+  <a href="https://www.instagram.com/rfikl_"><img src="https://img.shields.io/badge/@rfikl__-1a1a2e?style=flat-square&logo=instagram&logoColor=9CA3AF" alt="Instagram" /></a>
+</p>
 
 ---
 
+### ✦ About
+
 I build scalable web applications, explore cybersecurity, and experiment with AI solutions. I believe in writing code that is clean, efficient, and maintainable.
 
-### 🎯 Current Focus
-
+**Current Focus:**
 - **Web Development** — React & Next.js
 - **Security Research** — Penetration testing methodologies & vulnerability analysis
 - **AI & Machine Learning** — LLMs & AI-assisted development
 
 ---
 
-### 💻 Technologies
+### ✦ Technologies
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-1a1a2e?style=flat-square&logo=javascript&logoColor=9CA3AF)
 ![TypeScript](https://img.shields.io/badge/TypeScript-1a1a2e?style=flat-square&logo=typescript&logoColor=9CA3AF)
@@ -42,7 +48,7 @@ I build scalable web applications, explore cybersecurity, and experiment with AI
 
 ---
 
-### 📈 GitHub Analytics
+### ✦ GitHub Analytics
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rfypych/rfypych/output/github-snake-dark.svg" />
@@ -52,13 +58,17 @@ I build scalable web applications, explore cybersecurity, and experiment with AI
 
 <br><br>
 
-<a href="https://github.com/rfypych">
-  <img src="https://github-readme-stats.vercel.app/api?username=rfypych&show_icons=true&theme=transparent&bg_color=0d1117&title_color=9CA3AF&icon_color=6B7280&text_color=6B7280&border_color=21262d&hide_border=true&hide_rank=false" alt="GitHub Stats" height="165"/>
-</a>
-<a href="https://github.com/rfypych">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfypych&layout=compact&theme=transparent&bg_color=0d1117&title_color=9CA3AF&text_color=6B7280&border_color=21262d&hide_border=true&langs_count=6" alt="Top Languages" height="165"/>
-</a>
+<div align="center">
+  <a href="https://github.com/rfypych">
+    <img src="https://github-readme-stats.vercel.app/api?username=rfypych&show_icons=true&theme=transparent&bg_color=0d1117&title_color=9CA3AF&icon_color=6B7280&text_color=6B7280&border_color=21262d&hide_border=true&hide_rank=false" alt="GitHub Stats" height="165"/>
+  </a>
+  <a href="https://github.com/rfypych">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfypych&layout=compact&theme=transparent&bg_color=0d1117&title_color=9CA3AF&text_color=6B7280&border_color=21262d&hide_border=true&langs_count=6" alt="Top Languages" height="165"/>
+  </a>
+</div>
 
 ---
 
-<img src="https://komarev.com/ghpvc/?username=rfypych&color=6B7280&style=flat-square&label=Views" alt="Profile Views" />
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=rfypych&color=6B7280&style=flat-square&label=Views" alt="Profile Views" />
+</div>
