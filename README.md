@@ -7,31 +7,27 @@ Focused on building minimal, resilient web architectures and exploring system se
 
 <!-- START_AUTOMATA -->
 ```text
-[cellular automata] gen: 9 | seed: 0x7a3f8c | rule: B3/S23
-░░░░░░░░░░░░░░░██░░░░██░░░█░██░░░█░░░░████░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░█░░█░░░██░█░░░░░░░░█░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░███░░░░░░░█░░░░███░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░███░░███░░░░░█░░░█████░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░███░░░░█░░░░██░█░█░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░█░█░░░░░░█░░░░░██░░░░░███░░░░░░░
-░░░░░░░░░░░░░░░░░░░██░░░░░█░░░██░█░░░░██░░█░░░░░░░
+[cellular automata] gen: 10 | seed: 0x7a3f8c | rule: B3/S23
+░░░░░░░░░░░░░░░░░░░█░██░░░█░█░░██░░░░░░░░█░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░█░░█░░░██░█░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░████░░░░░░░███░░░░░░░█░░░░░░░░░░
+░░░░░░░░░░░░░░░░░█░███░░█░░░░██░░██░░░█░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░█░░░█░░░░███░░░░██░░░█░░░░░░░░
+░░░░░░░░░░░░░░░░░█░░█░░░░░░░░█░░░░█░░░░████░░░░░░░
+░░░░░░░░░░░░░░░░░░░██░░░░░█░███░░█░░░░█░░░█░░░░░░░
 ```
 <!-- END_AUTOMATA -->
 
 <!-- START_TERMINAL -->
 ```text
-rfypych@terminal:~$ run: neofetch
-rfypych@workspace
------------------
-OS       : Ubuntu 24.04 LTS (x86_64)
-Host     : Proxmox VE Hybrid Node
-Kernel   : 6.8.0-generic
-Shell    : zsh / bash
-Editor   : neovim / vscode
-Focus    : minimal, robust, secure architectures
-PGP/Key  : ssh-ed25519 (active)
+rfypych@terminal:~$ run: skills
+SUBSYSTEM CAPABILITIES:
+  ├── web/core      : react, next.js, node.js, fastify, rest/grpc
+  ├── security      : appsec auditing, osint tooling, threat modeling
+  ├── systems/infra : linux (ubuntu/debian), proxmox kvm/lxc, docker, ufw/iptables
+  └── databases     : postgresql, mysql, redis, sqlite
 
-last interaction: @Ssputra executed 'run: neofetch' at 2026-08-29 15:50 UTC
+last interaction: @rfypych executed 'run: skills' at 2026-08-29 15:51 UTC
 ```
 <!-- END_TERMINAL -->
 
