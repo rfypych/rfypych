@@ -8,6 +8,6 @@ Developer based in Indonesia. Focused on building web applications and exploring
 <br/>
 
 <p align="left">
-  <img src="https://github-readme-streak-stats-five.vercel.app/?user=rfypych&theme=tokyonight&hide_border=true&border_radius=8" height="150" alt="GitHub Streak" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rfypych&theme=tokyonight" height="150" alt="GitHub Stats" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rfypych&theme=tokyonight" height="150" alt="Top Languages" />
 </p>
