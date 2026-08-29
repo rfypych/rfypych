@@ -10,3 +10,8 @@ Developer based in Indonesia. Focused on building web applications and exploring
 <p align="left">
   <img src="https://streak-stats.demolab.com?user=rfypych&theme=dark&hide_border=true" alt="GitHub Streak" />
 </p>
+
+
+<p align="left">
+  <img src="https://github-readme-streak-stats-five.vercel.app/?user=rfypych&theme=dark&hide_border=true" alt="GitHub Streak" />
+</p>
