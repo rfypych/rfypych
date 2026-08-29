@@ -8,6 +8,5 @@ Developer based in Indonesia. Focused on building web applications and exploring
 <br/>
 
 <p align="left">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rfypych&theme=tokyonight" height="150" alt="GitHub Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rfypych&theme=tokyonight" height="150" alt="Top Languages" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rfypych&theme=github-compact&hide_border=true&hide_title=true&area=true&color=58a6ff" width="100%" alt="Activity Line" />
 </p>
