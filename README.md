@@ -7,31 +7,28 @@ Focused on building minimal, resilient web architectures and exploring system se
 
 <!-- START_AUTOMATA -->
 ```text
-[cellular automata] gen: 3 | seed: 0x7a3f8c | rule: B3/S23
-░░░░░░░░░░░█████░░░█░░░░░█░░██░█░█░░░░░░░░░░░░░░░░
-░░░░░░░░░░██░█░░░░░█░░░░░░░███░░█░░░░░██░░░░░░░░░░
-░░░░░░░░░███░░░░░░░░░█░█░░░██░░░░░░░░█░░█░░░░░░░█░
-░░░░░░░░░██░░░░░░░░░█░░█░░░░░░░░░░░░█░░░░█░░░░░░█░
-░░░░░░░░░░░░░░░░░░█░██░░█░░░░░░░░░░░█░█░░░░░░░░░░░
-░░░░░░░░░░░░░░░░███░░░░░░█░░░░░░███░░░░███░░░░░░░░
-░░░░░░░░░░░░██░░███░░░░░░█░░░░░█░░█░░░░░██░░░░░░░░
+[cellular automata] gen: 4 | seed: 0x7a3f8c | rule: B3/S23
+░░░░░░░░░░█░░░░███░█░░░░░░██░█░█░█░░░░░██░░░░░░░░░
+░░░░░░░░░█░░░█░░░░░░█░░░░░█░░░█░█░░░░░██░░░░░░░░░░
+░░░░░░░░░░░░█░░░░░░░█░█░░░░█░█░░░░░░░████░░░░░░░░░
+░░░░░░░░░█░█░░░░░░░██░░██░░░░░░░░░░░█░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░█░██░░█░░░░░░░░█░█░█░█░█░░░░░░░░
+░░░░░░░░░░░░░░░░█░░░░░░░██░░░░░░████░░░█░█░░░░░░░░
+░░░░░░░░░░░█░░░░░░░█░░░░███░░░██░░█░░░░█░█░░░░░░░░
 ```
 <!-- END_AUTOMATA -->
 
 <!-- START_TERMINAL -->
 ```text
-rfypych@terminal:~$ run: neofetch
-rfypych@workspace
------------------
-OS       : Ubuntu 24.04 LTS (x86_64)
-Host     : Proxmox VE Hybrid Node
-Kernel   : 6.8.0-generic
-Shell    : zsh / bash
-Editor   : neovim / vscode
-Focus    : minimal, robust, secure architectures
-PGP/Key  : ssh-ed25519 (active)
+rfypych@terminal:~$ run: status
+[ok] target     : rofikul huda (@rfypych)
+[ok] role       : full-stack development & security systems
+[ok] runtime    : indonesia (utc+07:00)
+[ok] stack      : typescript, node.js, python, go, linux/proxmox
+[ok] endpoints  : https://rofikul.vercel.app • https://t.me/rfyycrnge
+[ok] state      : online • systems nominal
 
-last interaction: @rfypych executed 'run: neofetch' at 2026-08-29 15:42 UTC
+last interaction: @rfypych executed 'run: status' at 2026-08-29 15:45 UTC
 ```
 <!-- END_TERMINAL -->
 
