@@ -1,44 +1,13 @@
-### Rofikul Huda
-`developer` • `indonesia (utc+07:00)` • `systems & application security`
+<div align="center">
 
-Focused on building minimal, resilient web architectures and exploring system security.
+<img src="./card.svg" alt="Rofikul Huda Terminal" width="800" />
 
----
+<br/>
 
-<!-- START_AUTOMATA -->
-```text
-[cellular automata] gen: 2 | seed: 0x7a3f8c | rule: B3/S23
-░░░░░░░░░░░███░░░░░░█████░░░░█░███░░░░░░░░░░░░░░░░
-░░░░░░░█░░░█░░█░░░░███░█░░░░█░░░░░░░░██░░░░░░░░░░░
-░░░░░░░░░░█░░░░░░░░░░░░█░█░██░░░░░░░░░░██░░░░░░█░░
-░░░░░░░░░██░░░░░░░░░░█░█░░░░░░░░░░░░░█░██░░░░░░█░█
-░░░░░░░░░░░░░░░░░░░█░█░██░░░░░░░░░░█░█░░█░░░░░░░░░
-░░░░░░░░░░░░░░░░░██░░░██░░░░░░░░░█░░░░░░██░░░░░░░░
-░░░░░░░░░░░░░░█░██░░░░░███░░█░░░██░░░░░░█░░░░░░░░░
-```
-<!-- END_AUTOMATA -->
+`developer` &nbsp;•&nbsp; `indonesia (utc+07:00)` &nbsp;•&nbsp; `systems & application security`
 
-<!-- START_TERMINAL -->
-```text
-rfypych@terminal:~$ run: status
-[ok] target     : rofikul huda (@rfypych)
-[ok] role       : full-stack development & security systems
-[ok] runtime    : indonesia (utc+07:00)
-[ok] stack      : typescript, node.js, python, go, linux/proxmox
-[ok] endpoints  : https://rofikul.vercel.app • https://t.me/rfyycrnge
-[ok] state      : online • systems nominal
+<br/>
 
-last interaction: @rfypych executed 'run: status' at 2026-08-29 15:41 UTC
-```
-<!-- END_TERMINAL -->
+[Website](https://rofikul.vercel.app/) &nbsp;•&nbsp; [Telegram](https://t.me/rfyycrnge) &nbsp;•&nbsp; [Email](mailto:rofikulhuda244@gmail.com)
 
-**Interactive Commands:**  
-[`[ run: status ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+status&body=trigger) • 
-[`[ run: skills ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+skills&body=trigger) • 
-[`[ run: neofetch ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+neofetch&body=trigger) • 
-[`[ run: ping ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+ping&body=trigger) • 
-[`[ run: evolve-life ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+evolve-life&body=trigger)
-
----
-
-- **Endpoints:** [Website](https://rofikul.vercel.app/) • [Telegram](https://t.me/rfyycrnge) • [Email](mailto:rofikulhuda244@gmail.com)
+</div>

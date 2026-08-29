@@ -1,0 +1,39 @@
+<svg width="800" height="340" viewBox="0 0 800 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 8px; }
+    .header-bar { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+    .dot { fill: #383e47; }
+    .title-text { fill: #7d8590; font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 11px; }
+    .code-text { fill: #c9d1d9; font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 13px; }
+    .prompt { fill: #7ee787; }
+    .cmd { fill: #e6edf3; font-weight: 600; }
+    .key { fill: #7d8590; }
+    .val { fill: #58a6ff; font-weight: 500; }
+    .str { fill: #a5d6ff; }
+    .dim { fill: #484f58; }
+    .active-dot { fill: #3fb950; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    .cursor { animation: blink 1s infinite; fill: #58a6ff; }
+    @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+    .pulse-node { animation: pulse 2.5s infinite ease-in-out; }
+  </style>
+  <rect x="1" y="1" width="798" height="338" rx="8" class="bg" />
+  <path d="M 1 9 Q 1 1 9 1 L 791 1 Q 799 1 799 9 L 799 34 L 1 34 Z" class="header-bar" />
+  <circle cx="18" cy="18" r="4.5" class="dot" />
+  <circle cx="32" cy="18" r="4.5" class="dot" />
+  <circle cx="46" cy="18" r="4.5" class="dot" />
+  <text x="400" y="21" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh (utc+07:00)</text>
+  <g transform="translate(24, 62)">
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">sysinfo --target rfypych</tspan></text>
+    <text x="0" y="26" class="code-text"><tspan class="key">identity    :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
+    <text x="0" y="48" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (WIB • UTC+07)</tspan></text>
+    <text x="0" y="70" class="code-text"><tspan class="key">focus       :</tspan> <tspan class="str">Full-Stack Development, Application Security, Systems</tspan></text>
+    <text x="0" y="92" class="code-text"><tspan class="key">stack       :</tspan> <tspan class="str">TypeScript, Node.js, Python, Go, Linux/Proxmox</tspan></text>
+    <text x="0" y="114" class="code-text"><tspan class="key">runtime     :</tspan> <tspan class="active-dot pulse-node">●</tspan> <tspan class="str">Systems nominal • All edge nodes active</tspan></text>
+    <line x1="0" y1="136" x2="752" y2="136" stroke="#21262d" stroke-width="1" />
+    <text x="0" y="162" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">status --nodes</tspan></text>
+    <text x="0" y="188" class="code-text"><tspan class="dim">[0x01]</tspan> <tspan class="key">node-1 (kvm)   :</tspan> <tspan class="str">Ubuntu 24.04 LTS</tspan> <tspan class="dim">[157.15.1.184:51515 • ssh-ed25519]</tspan></text>
+    <text x="0" y="210" class="code-text"><tspan class="dim">[0x02]</tspan> <tspan class="key">node-2 (lxc)   :</tspan> <tspan class="str">Ubuntu 24.04 LTS</tspan> <tspan class="dim">[157.15.1.184:55551 • keyless-auth]</tspan></text>
+    <text x="0" y="246" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="235" width="7" height="13" class="cursor" /></text>
+  </g>
+</svg>
