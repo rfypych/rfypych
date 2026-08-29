@@ -8,5 +8,5 @@ Developer based in Indonesia. Focused on building web applications and exploring
 <br/>
 
 <p align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=rfypych&theme=flat&no-frame=true&no-bg=true&column=6" alt="Trophies" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=3000&pause=1000&color=58A6FF&background=0D111700&vCenter=true&width=450&lines=systemctl+status+developer;all+systems+nominal;exploring+security+%26+networks..." alt="Interactive Terminal" />
 </p>
