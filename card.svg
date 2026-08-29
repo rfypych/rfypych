@@ -4,7 +4,6 @@
 
     .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 8px; }
     .header-bar { fill: #161b22; stroke: #30363d; stroke-width: 1; }
-    .dot { fill: #383e47; }
     .title-text { fill: #7d8590; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 500; }
     
     .tab-btn { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; }
@@ -30,12 +29,8 @@
 
   <rect x="1" y="1" width="798" height="348" rx="8" class="bg" />
   <path d="M 1 9 Q 1 1 9 1 L 791 1 Q 799 1 799 9 L 799 36 L 1 36 Z" class="header-bar" />
-  
-  <circle cx="18" cy="18" r="4.5" class="dot" />
-  <circle cx="32" cy="18" r="4.5" class="dot" />
-  <circle cx="46" cy="18" r="4.5" class="dot" />
 
-  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh</text>
+  <text x="24" y="22" class="title-text">rfypych@workspace ~ zsh</text>
 
   <g transform="translate(24, 52)">
     <text x="0" y="0" class="tab-btn" fill="#58a6ff">[01: WHOAMI]</text>
@@ -51,10 +46,10 @@
     <text x="0" y="52" class="code-text"><tspan class="key">role        :</tspan> <tspan class="str">Full-Stack Developer &amp; Security Analyst</tspan></text>
     <text x="0" y="76" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (UTC+07:00)</tspan></text>
     <text x="0" y="100" class="code-text"><tspan class="key">languages   :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">SQL</tspan></text>
-    <text x="0" y="124" class="code-text"><tspan class="key">links       :</tspan> <tspan class="str">rofikul.vercel.app</tspan> <tspan class="dim">•</tspan> <tspan class="str">t.me/rfyycrnge</tspan></text>
+    <text x="0" y="124" class="code-text"><tspan class="key">links       :</tspan> <tspan class="str">rofikul.vercel.app / t.me/rfyycrnge</tspan></text>
     <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
     <text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="str">active</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: whoami' at 2026-08-29 16:06 UTC</tspan></text>
+    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: whoami' at 2026-08-29 16:11 UTC</tspan></text>
     <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>
