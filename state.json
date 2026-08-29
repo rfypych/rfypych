@@ -315,7 +315,7 @@
       0
     ]
   ],
-  "last_command": "run: whoami",
+  "last_command": "run: uname",
   "last_user": "rfypych",
-  "last_timestamp": "2026-08-29 16:20 UTC"
+  "last_timestamp": "2026-08-29 16:21 UTC"
 }
