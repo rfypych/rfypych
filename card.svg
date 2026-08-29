@@ -33,24 +33,25 @@
   <text x="24" y="22" class="title-text">rfypych@workspace ~ zsh</text>
 
   <g transform="translate(24, 52)">
-    <text x="0" y="0" class="tab-btn" fill="#58a6ff">[01: WHOAMI]</text>
+    <text x="0" y="0" class="tab-btn" fill="#484f58">[01: WHOAMI]</text>
     <text x="120" y="0" class="tab-btn" fill="#484f58">[02: STACK]</text>
     <text x="230" y="0" class="tab-btn" fill="#484f58">[03: PING]</text>
-    <text x="330" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
+    <text x="330" y="0" class="tab-btn" fill="#58a6ff">[04: AUTOMATA]</text>
     <text x="460" y="0" class="tab-btn" fill="#484f58">[05: UNAME]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
   <g transform="translate(24, 90)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan></text>
-    <text x="0" y="28" class="code-text"><tspan class="key">user        :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
-    <text x="0" y="52" class="code-text"><tspan class="key">role        :</tspan> <tspan class="str">Full-Stack Developer &amp; Security Analyst</tspan></text>
-    <text x="0" y="76" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (UTC+07:00)</tspan></text>
-    <text x="0" y="100" class="code-text"><tspan class="key">languages   :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">SQL</tspan></text>
-    <text x="0" y="124" class="code-text"><tspan class="key">links       :</tspan> <tspan class="str">rofikul.vercel.app / t.me/rfyycrnge</tspan></text>
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">conway --gen 2 --seed 0x7a3f8c</tspan></text>
+    <text x="0" y="28" class="code-text" fill="#c9d1d9">░░░░░░░░░░░░░░░██░░░█░░░█░░░░██░██░░░██░░░░░░░░░░░</text>
+    <text x="0" y="48" class="code-text" fill="#c9d1d9">░░░░░░░░░░█████░░█░█░███░░████░█░░░░░░░░░░░░░░░░░░</text>
+    <text x="0" y="68" class="code-text" fill="#c9d1d9">░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░░░░░░░░░░░█░░░░░░░░░</text>
+    <text x="0" y="88" class="code-text" fill="#c9d1d9">░░░█░░░░░░░░░░░░░░░░░░██░░░█░░░░░░░░░░░░░░░░░░░░░░</text>
+    <text x="0" y="108" class="code-text" fill="#c9d1d9">░█░█░░░░░██░██░█░░██░░░░██░█░░░░░░░█░███░░░░░░░░░░</text>
+    <text x="0" y="128" class="code-text" fill="#c9d1d9">░░░░░░░░░░░░░░░██░░░░░░███░░░██░░░██░███░░░░░░░░░░</text>
     <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="str">active</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: whoami' at 2026-08-29 16:32 UTC</tspan></text>
+    <text x="0" y="172" class="code-text"><tspan class="key">state       :</tspan> <tspan class="str">generation 2 (B3/S23)</tspan></text>
+    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: automata' at 2026-08-29 18:13 UTC</tspan></text>
     <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>
