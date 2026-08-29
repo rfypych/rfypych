@@ -10,13 +10,12 @@
     .tab-btn { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; }
     .code-text { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }
 
-    .prompt { fill: #7ee787; font-weight: 700; }
+    .prompt { fill: #58a6ff; font-weight: 700; }
     .cmd { fill: #e6edf3; font-weight: 600; }
     .key { fill: #7d8590; font-weight: 500; }
     .val { fill: #58a6ff; font-weight: 500; }
-    .str { fill: #a5d6ff; }
+    .str { fill: #c9d1d9; }
     .dim { fill: #484f58; }
-    .success { fill: #3fb950; font-weight: 600; }
     .tag { fill: #d2a8ff; }
 
     @keyframes blink {
@@ -27,12 +26,6 @@
       animation: blink 1s infinite;
       fill: #58a6ff;
     }
-
-    @keyframes statusPulse {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
-    .pulse { animation: statusPulse 2s infinite ease-in-out; }
   </style>
 
   <rect x="1" y="1" width="798" height="348" rx="8" class="bg" />
@@ -42,26 +35,26 @@
   <circle cx="32" cy="18" r="4.5" class="dot" />
   <circle cx="46" cy="18" r="4.5" class="dot" />
 
-  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh (interactive terminal)</text>
+  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh</text>
 
   <g transform="translate(24, 52)">
-    <text x="0" y="0" class="tab-btn" fill="#58a6ff">[01: SYSINFO]</text>
-    <text x="140" y="0" class="tab-btn" fill="#484f58">[02: SKILLS]</text>
-    <text x="280" y="0" class="tab-btn" fill="#484f58">[03: PING_NODES]</text>
-    <text x="440" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
+    <text x="0" y="0" class="tab-btn" fill="#58a6ff">[01: WHOAMI]</text>
+    <text x="130" y="0" class="tab-btn" fill="#484f58">[02: STACK]</text>
+    <text x="250" y="0" class="tab-btn" fill="#484f58">[03: PING]</text>
+    <text x="360" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
   <g transform="translate(24, 90)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">sysinfo --identity</tspan></text>
-    <text x="0" y="28" class="code-text"><tspan class="key">subject     :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
-    <text x="0" y="52" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (WIB • UTC+07:00)</tspan></text>
-    <text x="0" y="76" class="code-text"><tspan class="key">focus       :</tspan> <tspan class="str">Full-Stack Architecture, Application Security, Distributed Tooling</tspan></text>
-    <text x="0" y="100" class="code-text"><tspan class="key">core_stack  :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">Linux/Proxmox</tspan></text>
-    <text x="0" y="124" class="code-text"><tspan class="key">philosophy  :</tspan> <tspan class="str">"Less abstraction, zero bloat, high resilience"</tspan></text>
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="key">user        :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
+    <text x="0" y="52" class="code-text"><tspan class="key">role        :</tspan> <tspan class="str">Full-Stack Developer &amp; Security Analyst</tspan></text>
+    <text x="0" y="76" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (UTC+07:00)</tspan></text>
+    <text x="0" y="100" class="code-text"><tspan class="key">languages   :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">SQL</tspan></text>
+    <text x="0" y="124" class="code-text"><tspan class="key">links       :</tspan> <tspan class="str">rofikul.vercel.app</tspan> <tspan class="dim">•</tspan> <tspan class="str">t.me/rfyycrnge</tspan></text>
     <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="success pulse">●</tspan> <tspan class="str">Online • Systems nominal • Ed25519 identity verified</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: sysinfo' at 2026-08-29 16:02 UTC</tspan></text>
+    <text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="str">active</tspan></text>
+    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: whoami' at 2026-08-29 16:06 UTC</tspan></text>
     <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>

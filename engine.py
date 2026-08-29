@@ -4,7 +4,6 @@ import hashlib
 import json
 import os
 import random
-import re
 from datetime import datetime, timezone
 
 STATE_FILE = "state.json"
@@ -17,7 +16,7 @@ DEFAULT_STATE = {
     "generation": 1,
     "seed_hash": "0x7a3f8c",
     "grid": [],
-    "last_command": "run: sysinfo",
+    "last_command": "run: whoami",
     "last_user": "rfypych",
     "last_timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 }
@@ -89,48 +88,49 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
         action = cmd_clean.lower()
     
     parts = action.split()
-    cmd_name = parts[0] if parts else "sysinfo"
+    cmd_name = parts[0] if parts else "whoami"
 
     t1_col, t2_col, t3_col, t4_col = "#484f58", "#484f58", "#484f58", "#484f58"
     body_elements = []
 
-    if cmd_name in ["sysinfo", "status", "whoami"]:
+    if cmd_name in ["whoami", "sysinfo", "status", "bio"]:
         t1_col = "#58a6ff"
         body_elements = [
-            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">sysinfo --identity</tspan></text>',
-            '<text x="0" y="28" class="code-text"><tspan class="key">subject     :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>',
-            '<text x="0" y="52" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (WIB • UTC+07:00)</tspan></text>',
-            '<text x="0" y="76" class="code-text"><tspan class="key">focus       :</tspan> <tspan class="str">Full-Stack Architecture, Application Security, Distributed Tooling</tspan></text>',
-            '<text x="0" y="100" class="code-text"><tspan class="key">core_stack  :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">Linux/Proxmox</tspan></text>',
-            '<text x="0" y="124" class="code-text"><tspan class="key">philosophy  :</tspan> <tspan class="str">"Less abstraction, zero bloat, high resilience"</tspan></text>',
+            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan></text>',
+            '<text x="0" y="28" class="code-text"><tspan class="key">user        :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>',
+            '<text x="0" y="52" class="code-text"><tspan class="key">role        :</tspan> <tspan class="str">Full-Stack Developer &amp; Security Analyst</tspan></text>',
+            '<text x="0" y="76" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (UTC+07:00)</tspan></text>',
+            '<text x="0" y="100" class="code-text"><tspan class="key">languages   :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">SQL</tspan></text>',
+            '<text x="0" y="124" class="code-text"><tspan class="key">links       :</tspan> <tspan class="str">rofikul.vercel.app</tspan> <tspan class="dim">•</tspan> <tspan class="str">t.me/rfyycrnge</tspan></text>',
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            '<text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="success pulse">●</tspan> <tspan class="str">Online • Systems nominal • Ed25519 identity verified</tspan></text>'
+            '<text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="str">active</tspan></text>'
         ]
-    elif cmd_name in ["skills", "stack", "tree"]:
+    elif cmd_name in ["stack", "skills", "cat"]:
         t2_col = "#58a6ff"
         body_elements = [
-            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">tree --subsystems</tspan></text>',
-            '<text x="0" y="28" class="code-text"><tspan class="dim">├── [0x01]</tspan> <tspan class="val">web_foundations</tspan> <tspan class="dim">:</tspan> <tspan class="str">React, Next.js, Fastify, High-Throughput REST/gRPC</tspan></text>',
-            '<text x="0" y="52" class="code-text"><tspan class="dim">├── [0x02]</tspan> <tspan class="val">app_security</tspan>    <tspan class="dim">:</tspan> <tspan class="str">Vulnerability Assessment, OSINT Tooling, Surface Hardening</tspan></text>',
-            '<text x="0" y="76" class="code-text"><tspan class="dim">├── [0x03]</tspan> <tspan class="val">infra_systems</tspan>   <tspan class="dim">:</tspan> <tspan class="str">Proxmox KVM / LXC, Docker, UFW/iptables, Debian/Ubuntu</tspan></text>',
-            '<text x="0" y="100" class="code-text"><tspan class="dim">└── [0x04]</tspan> <tspan class="val">persistence</tspan>     <tspan class="dim">:</tspan> <tspan class="str">PostgreSQL, Redis, SQLite, Vector stores</tspan></text>',
+            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat stack.txt</tspan></text>',
+            '<text x="0" y="28" class="code-text"><tspan class="key">frontend    :</tspan> <tspan class="str">React, Next.js, Tailwind CSS</tspan></text>',
+            '<text x="0" y="52" class="code-text"><tspan class="key">backend     :</tspan> <tspan class="str">Node.js, Fastify, Express, Python</tspan></text>',
+            '<text x="0" y="76" class="code-text"><tspan class="key">security    :</tspan> <tspan class="str">Application Security, OSINT, Threat Modeling</tspan></text>',
+            '<text x="0" y="100" class="code-text"><tspan class="key">infra       :</tspan> <tspan class="str">Linux (Debian/Ubuntu), Docker, Nginx, PostgreSQL</tspan></text>',
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            '<text x="0" y="172" class="code-text"><tspan class="key">dispatch    :</tspan> <tspan class="dim">[web] </tspan><tspan class="val">rofikul.vercel.app</tspan> <tspan class="dim">• [wire] </tspan><tspan class="val">t.me/rfyycrnge</tspan></text>'
+            '<text x="0" y="172" class="code-text"><tspan class="key">tools       :</tspan> <tspan class="str">Git, Bash, Neovim, VS Code</tspan></text>'
         ]
-    elif cmd_name in ["ping", "telemetry", "nodes"]:
+    elif cmd_name in ["ping"]:
         t3_col = "#58a6ff"
-        ms1 = random.randint(14, 22)
-        ms2 = random.randint(15, 24)
+        ms1 = random.randint(12, 18)
+        ms2 = random.randint(12, 18)
+        ms3 = random.randint(12, 18)
         body_elements = [
-            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ping --cluster --all-nodes</tspan></text>',
-            f'<text x="0" y="28" class="code-text"><tspan class="dim">[node-01]</tspan> <tspan class="val">vps-master</tspan>  <tspan class="dim">[157.15.1.184:51515]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">{ms1}.4ms</tspan> <tspan class="success">● ACK</tspan></text>',
-            f'<text x="0" y="52" class="code-text"><tspan class="dim">[node-02]</tspan> <tspan class="val">vps-worker</tspan>  <tspan class="dim">[157.15.1.184:55551]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">{ms2}.1ms</tspan> <tspan class="success">● ACK</tspan></text>',
-            '<text x="0" y="76" class="code-text"><tspan class="dim">[node-03]</tspan> <tspan class="val">edge-gateway</tspan><tspan class="dim">[rofikul.vercel.app]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">12.8ms</tspan> <tspan class="success">● ACK</tspan></text>',
-            '<text x="0" y="100" class="code-text"><tspan class="key">cluster_load:</tspan> <tspan class="str">0.11, 0.08, 0.05</tspan> <tspan class="dim">| </tspan><tspan class="key">mem_usage:</tspan> <tspan class="str">18.4%</tspan> <tspan class="dim">| </tspan><tspan class="key">packet_loss:</tspan> <tspan class="success">0.0%</tspan></text>',
+            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ping -c 3 1.1.1.1</tspan></text>',
+            '<text x="0" y="28" class="code-text"><tspan class="dim">PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.</tspan></text>',
+            f'<text x="0" y="52" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time={ms1}.2 ms</tspan></text>',
+            f'<text x="0" y="76" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=2 ttl=57 time={ms2}.8 ms</tspan></text>',
+            f'<text x="0" y="100" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=3 ttl=57 time={ms3}.4 ms</tspan></text>',
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            '<text x="0" y="172" class="code-text"><tspan class="key">diagnostics :</tspan> <tspan class="str">All virtual machines responding on Proxmox NAT matrix</tspan></text>'
+            '<text x="0" y="172" class="code-text"><tspan class="key">summary     :</tspan> <tspan class="str">3 packets transmitted, 3 received, 0% packet loss</tspan></text>'
         ]
-    elif cmd_name in ["automata", "life", "evolve-life", "evolve"]:
+    elif cmd_name in ["automata", "life", "conway"]:
         t4_col = "#58a6ff"
         gen = state.get("generation", 1)
         seed = state.get("seed_hash", "0x7a3f8c")
@@ -138,29 +138,28 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
         grid_lines = []
         for idx, row in enumerate(grid[:6]):
             row_str = "".join("█" if cell else "░" for cell in row)
-            grid_lines.append(f'<text x="0" y="{28 + idx*20}" class="code-text" fill="#7ee787">{row_str}</text>')
+            grid_lines.append(f'<text x="0" y="{28 + idx*20}" class="code-text" fill="#c9d1d9">{row_str}</text>')
         body_elements = [
-            f'<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">automata --seed {seed} --gen {gen}</tspan></text>',
+            f'<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">conway --gen {gen} --seed {seed}</tspan></text>',
             *grid_lines,
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            f'<text x="0" y="172" class="code-text"><tspan class="key">conway_state:</tspan> <tspan class="str">Generation #{gen} • Triggered by @{user}</tspan></text>'
+            f'<text x="0" y="172" class="code-text"><tspan class="key">state       :</tspan> <tspan class="str">generation {gen} (B3/S23)</tspan></text>'
         ]
-    elif cmd_name in ["neofetch", "fetch"]:
+    elif cmd_name in ["uname", "neofetch"]:
         body_elements = [
-            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">neofetch</tspan></text>',
-            '<text x="0" y="28" class="code-text"><tspan class="val">OS      :</tspan> <tspan class="str">Ubuntu 24.04 LTS (x86_64) on Proxmox VE</tspan></text>',
-            '<text x="0" y="52" class="code-text"><tspan class="val">Kernel  :</tspan> <tspan class="str">6.8.0-generic • Uptime: 99.98%</tspan></text>',
-            '<text x="0" y="76" class="code-text"><tspan class="val">Shell   :</tspan> <tspan class="str">zsh 5.9 (x86_64-debian-linux-gnu)</tspan></text>',
-            '<text x="0" y="100" class="code-text"><tspan class="val">Identity:</tspan> <tspan class="str">Rofikul Huda • full-stack &amp; security engineer</tspan></text>',
+            '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uname -srmo</tspan></text>',
+            '<text x="0" y="28" class="code-text"><tspan class="str">Linux 6.8.0-generic x86_64 GNU/Linux</tspan></text>',
+            '<text x="0" y="60" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uptime</tspan></text>',
+            '<text x="0" y="88" class="code-text"><tspan class="str">up 42 days, 12:30, 1 user, load average: 0.12, 0.08, 0.05</tspan></text>',
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            '<text x="0" y="172" class="code-text"><tspan class="key">endpoints:</tspan> <tspan class="val">rofikul.vercel.app</tspan> <tspan class="dim">•</tspan> <tspan class="val">t.me/rfyycrnge</tspan></text>'
+            '<text x="0" y="172" class="code-text"><tspan class="key">shell       :</tspan> <tspan class="str">zsh 5.9</tspan></text>'
         ]
     else:
         body_elements = [
             f'<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">{cmd}</tspan></text>',
-            f'<text x="0" y="28" class="code-text"><tspan class="key">[output] :</tspan> <tspan class="str">Executed custom command</tspan></text>',
+            f'<text x="0" y="28" class="code-text"><tspan class="str">Command executed</tspan></text>',
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
-            '<text x="0" y="172" class="code-text"><tspan class="key">available:</tspan> <tspan class="str">sysinfo, skills, ping, automata, neofetch</tspan></text>'
+            '<text x="0" y="172" class="code-text"><tspan class="key">commands    :</tspan> <tspan class="str">whoami, stack, ping, automata, uname</tspan></text>'
         ]
 
     body_xml = "\n    ".join(body_elements)
@@ -177,13 +176,12 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
     .tab-btn {{ font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; }}
     .code-text {{ font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }}
 
-    .prompt {{ fill: #7ee787; font-weight: 700; }}
+    .prompt {{ fill: #58a6ff; font-weight: 700; }}
     .cmd {{ fill: #e6edf3; font-weight: 600; }}
     .key {{ fill: #7d8590; font-weight: 500; }}
     .val {{ fill: #58a6ff; font-weight: 500; }}
-    .str {{ fill: #a5d6ff; }}
+    .str {{ fill: #c9d1d9; }}
     .dim {{ fill: #484f58; }}
-    .success {{ fill: #3fb950; font-weight: 600; }}
     .tag {{ fill: #d2a8ff; }}
 
     @keyframes blink {{
@@ -194,12 +192,6 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
       animation: blink 1s infinite;
       fill: #58a6ff;
     }}
-
-    @keyframes statusPulse {{
-      0%, 100% {{ opacity: 0.4; }}
-      50% {{ opacity: 1; }}
-    }}
-    .pulse {{ animation: statusPulse 2s infinite ease-in-out; }}
   </style>
 
   <rect x="1" y="1" width="798" height="348" rx="8" class="bg" />
@@ -209,13 +201,13 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
   <circle cx="32" cy="18" r="4.5" class="dot" />
   <circle cx="46" cy="18" r="4.5" class="dot" />
 
-  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh (interactive terminal)</text>
+  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh</text>
 
   <g transform="translate(24, 52)">
-    <text x="0" y="0" class="tab-btn" fill="{t1_col}">[01: SYSINFO]</text>
-    <text x="140" y="0" class="tab-btn" fill="{t2_col}">[02: SKILLS]</text>
-    <text x="280" y="0" class="tab-btn" fill="{t3_col}">[03: PING_NODES]</text>
-    <text x="440" y="0" class="tab-btn" fill="{t4_col}">[04: AUTOMATA]</text>
+    <text x="0" y="0" class="tab-btn" fill="{t1_col}">[01: WHOAMI]</text>
+    <text x="130" y="0" class="tab-btn" fill="{t2_col}">[02: STACK]</text>
+    <text x="250" y="0" class="tab-btn" fill="{t3_col}">[03: PING]</text>
+    <text x="360" y="0" class="tab-btn" fill="{t4_col}">[04: AUTOMATA]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
@@ -230,16 +222,16 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--issue-title", type=str, default="run: sysinfo")
+    parser.add_argument("--issue-title", type=str, default="run: whoami")
     parser.add_argument("--issue-user", type=str, default="rfypych")
     args = parser.parse_args()
 
     state = load_state()
     user = args.issue_user.strip() or "rfypych"
-    cmd = args.issue_title.strip() or "run: sysinfo"
+    cmd = args.issue_title.strip() or "run: whoami"
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    if any(k in cmd.lower() for k in ["automata", "life", "evolve"]):
+    if any(k in cmd.lower() for k in ["automata", "life", "conway"]):
         state["grid"] = step_grid(state.get("grid") or init_grid("default"))
         state["generation"] = state.get("generation", 1) + 1
     elif not state.get("grid"):
@@ -255,7 +247,7 @@ def main():
     with open(SVG_FILE, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
-    print(f"[+] Rendered dynamic card.svg for command '{cmd}' by @{user}")
+    print(f"[+] Rendered card.svg for '{cmd}' by @{user}")
 
 if __name__ == "__main__":
     main()

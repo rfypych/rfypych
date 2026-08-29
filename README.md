@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="./card.svg" alt="Rofikul Huda Terminal" width="800" />
+<img src="./card.svg" alt="Terminal" width="800" />
 
 <br/>
 
-**Interactive Commands (Click to Execute):**  
-[`[ ❯ run: sysinfo ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+sysinfo&body=trigger) &nbsp;•&nbsp; 
-[`[ ❯ run: skills ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+skills&body=trigger) &nbsp;•&nbsp; 
-[`[ ❯ run: ping ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+ping&body=trigger) &nbsp;•&nbsp; 
-[`[ ❯ run: automata ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+automata&body=trigger) &nbsp;•&nbsp; 
-[`[ ❯ run: neofetch ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+neofetch&body=trigger)
+**Commands:**  
+[`[ run: whoami ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+whoami&body=trigger) &nbsp;•&nbsp; 
+[`[ run: stack ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+stack&body=trigger) &nbsp;•&nbsp; 
+[`[ run: ping ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+ping&body=trigger) &nbsp;•&nbsp; 
+[`[ run: automata ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+automata&body=trigger) &nbsp;•&nbsp; 
+[`[ run: uname ]`](https://github.com/rfypych/rfypych/issues/new?title=run:+uname&body=trigger)
 
 <br/>
 
