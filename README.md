@@ -9,5 +9,5 @@ Developer based in Indonesia. Focused on building web applications and exploring
 
 <p align="left">
   <img src="https://streak-stats.demolab.com?user=rfypych&theme=dark&hide_border=true" height="150" alt="GitHub Streak" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfypych&layout=compact&theme=dark&hide_border=true" height="150" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=rfypych&show_icons=true&theme=dark&hide_border=true&include_all_commits=true" height="150" alt="GitHub Stats" />
 </p>
