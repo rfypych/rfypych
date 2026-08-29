@@ -35,20 +35,19 @@
   <g transform="translate(24, 52)">
     <text x="0" y="0" class="tab-btn" fill="#484f58">[01: WHOAMI]</text>
     <text x="130" y="0" class="tab-btn" fill="#484f58">[02: STACK]</text>
-    <text x="250" y="0" class="tab-btn" fill="#58a6ff">[03: PING]</text>
+    <text x="250" y="0" class="tab-btn" fill="#484f58">[03: PING]</text>
     <text x="360" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
   <g transform="translate(24, 90)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ping -c 3 1.1.1.1</tspan></text>
-    <text x="0" y="28" class="code-text"><tspan class="dim">PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.</tspan></text>
-    <text x="0" y="52" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time=17.2 ms</tspan></text>
-    <text x="0" y="76" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=2 ttl=57 time=17.8 ms</tspan></text>
-    <text x="0" y="100" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=3 ttl=57 time=16.4 ms</tspan></text>
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uname -srmo</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="str">Linux 6.8.0-generic x86_64 GNU/Linux</tspan></text>
+    <text x="0" y="60" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uptime</tspan></text>
+    <text x="0" y="88" class="code-text"><tspan class="str">up 42 days, 12:30, 1 user, load average: 0.12, 0.08, 0.05</tspan></text>
     <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="172" class="code-text"><tspan class="key">summary     :</tspan> <tspan class="str">3 packets transmitted, 3 received, 0% packet loss</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: ping' at 2026-08-29 16:14 UTC</tspan></text>
+    <text x="0" y="172" class="code-text"><tspan class="key">shell       :</tspan> <tspan class="str">zsh 5.9</tspan></text>
+    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: uname' at 2026-08-29 16:15 UTC</tspan></text>
     <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>
