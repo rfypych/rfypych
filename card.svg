@@ -1,39 +1,169 @@
-<svg width="800" height="340" viewBox="0 0 800 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="360" viewBox="0 0 800 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+
     .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 8px; }
     .header-bar { fill: #161b22; stroke: #30363d; stroke-width: 1; }
     .dot { fill: #383e47; }
-    .title-text { fill: #7d8590; font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 11px; }
-    .code-text { fill: #c9d1d9; font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 13px; }
-    .prompt { fill: #7ee787; }
+    .title-text { fill: #7d8590; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 500; }
+    
+    .tab-btn { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; }
+    .code-text { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }
+
+    .prompt { fill: #7ee787; font-weight: 700; }
     .cmd { fill: #e6edf3; font-weight: 600; }
-    .key { fill: #7d8590; }
+    .key { fill: #7d8590; font-weight: 500; }
     .val { fill: #58a6ff; font-weight: 500; }
     .str { fill: #a5d6ff; }
     .dim { fill: #484f58; }
-    .active-dot { fill: #3fb950; }
-    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    .cursor { animation: blink 1s infinite; fill: #58a6ff; }
-    @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
-    .pulse-node { animation: pulse 2.5s infinite ease-in-out; }
+    .success { fill: #3fb950; font-weight: 600; }
+    .tag { fill: #d2a8ff; }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .cursor {
+      animation: blink 1s infinite;
+      fill: #58a6ff;
+    }
+
+    @keyframes showScreen1 {
+      0%, 23% { opacity: 1; visibility: visible; }
+      25%, 98% { opacity: 0; visibility: hidden; }
+      100% { opacity: 1; visibility: visible; }
+    }
+    @keyframes showScreen2 {
+      0%, 24% { opacity: 0; visibility: hidden; }
+      25%, 48% { opacity: 1; visibility: visible; }
+      50%, 100% { opacity: 0; visibility: hidden; }
+    }
+    @keyframes showScreen3 {
+      0%, 49% { opacity: 0; visibility: hidden; }
+      50%, 73% { opacity: 1; visibility: visible; }
+      75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    @keyframes showScreen4 {
+      0%, 74% { opacity: 0; visibility: hidden; }
+      75%, 98% { opacity: 1; visibility: visible; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    .screen-1 { animation: showScreen1 16s infinite; }
+    .screen-2 { animation: showScreen2 16s infinite; }
+    .screen-3 { animation: showScreen3 16s infinite; }
+    .screen-4 { animation: showScreen4 16s infinite; }
+
+    @keyframes tab1Active {
+      0%, 23% { fill: #58a6ff; opacity: 1; }
+      25%, 98% { fill: #484f58; opacity: 0.6; }
+      100% { fill: #58a6ff; opacity: 1; }
+    }
+    @keyframes tab2Active {
+      0%, 24% { fill: #484f58; opacity: 0.6; }
+      25%, 48% { fill: #58a6ff; opacity: 1; }
+      50%, 100% { fill: #484f58; opacity: 0.6; }
+    }
+    @keyframes tab3Active {
+      0%, 49% { fill: #484f58; opacity: 0.6; }
+      50%, 73% { fill: #58a6ff; opacity: 1; }
+      75%, 100% { fill: #484f58; opacity: 0.6; }
+    }
+    @keyframes tab4Active {
+      0%, 74% { fill: #484f58; opacity: 0.6; }
+      75%, 98% { fill: #58a6ff; opacity: 1; }
+      100% { fill: #484f58; opacity: 0.6; }
+    }
+
+    .tab-1-text { animation: tab1Active 16s infinite; }
+    .tab-2-text { animation: tab2Active 16s infinite; }
+    .tab-3-text { animation: tab3Active 16s infinite; }
+    .tab-4-text { animation: tab4Active 16s infinite; }
+
+    @keyframes progressAnim {
+      0% { width: 0px; }
+      100% { width: 798px; }
+    }
+    .progress-bar {
+      animation: progressAnim 16s linear infinite;
+      fill: #388bfd;
+      opacity: 0.8;
+    }
+
+    @keyframes statusPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .pulse { animation: statusPulse 2s infinite ease-in-out; }
   </style>
-  <rect x="1" y="1" width="798" height="338" rx="8" class="bg" />
-  <path d="M 1 9 Q 1 1 9 1 L 791 1 Q 799 1 799 9 L 799 34 L 1 34 Z" class="header-bar" />
+
+  <rect x="1" y="1" width="798" height="358" rx="8" class="bg" />
+  <path d="M 1 9 Q 1 1 9 1 L 791 1 Q 799 1 799 9 L 799 36 L 1 36 Z" class="header-bar" />
+  
   <circle cx="18" cy="18" r="4.5" class="dot" />
   <circle cx="32" cy="18" r="4.5" class="dot" />
   <circle cx="46" cy="18" r="4.5" class="dot" />
-  <text x="400" y="21" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh (utc+07:00)</text>
-  <g transform="translate(24, 62)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">sysinfo --target rfypych</tspan></text>
-    <text x="0" y="26" class="code-text"><tspan class="key">identity    :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
-    <text x="0" y="48" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (WIB • UTC+07)</tspan></text>
-    <text x="0" y="70" class="code-text"><tspan class="key">focus       :</tspan> <tspan class="str">Full-Stack Development, Application Security, Systems</tspan></text>
-    <text x="0" y="92" class="code-text"><tspan class="key">stack       :</tspan> <tspan class="str">TypeScript, Node.js, Python, Go, Linux/Proxmox</tspan></text>
-    <text x="0" y="114" class="code-text"><tspan class="key">runtime     :</tspan> <tspan class="active-dot pulse-node">●</tspan> <tspan class="str">Systems nominal • All edge nodes active</tspan></text>
-    <line x1="0" y1="136" x2="752" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="162" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">status --nodes</tspan></text>
-    <text x="0" y="188" class="code-text"><tspan class="dim">[0x01]</tspan> <tspan class="key">node-1 (kvm)   :</tspan> <tspan class="str">Ubuntu 24.04 LTS</tspan> <tspan class="dim">[157.15.1.184:51515 • ssh-ed25519]</tspan></text>
-    <text x="0" y="210" class="code-text"><tspan class="dim">[0x02]</tspan> <tspan class="key">node-2 (lxc)   :</tspan> <tspan class="str">Ubuntu 24.04 LTS</tspan> <tspan class="dim">[157.15.1.184:55551 • keyless-auth]</tspan></text>
-    <text x="0" y="246" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="235" width="7" height="13" class="cursor" /></text>
+
+  <text x="400" y="22" text-anchor="middle" class="title-text">rfypych@workspace ~ zsh (auto-telemetry: 16s cycle)</text>
+
+  <g transform="translate(24, 52)">
+    <text x="0" y="0" class="tab-btn tab-1-text">[01: IDENTITY]</text>
+    <text x="140" y="0" class="tab-btn tab-2-text">[02: SUBSYSTEMS]</text>
+    <text x="300" y="0" class="tab-btn tab-3-text">[03: TELEMETRY]</text>
+    <text x="460" y="0" class="tab-btn tab-4-text">[04: CONWAY_AUTOMATA]</text>
+    <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
+  </g>
+
+  <rect x="1" y="35" width="0" height="1.5" class="progress-bar" />
+
+  <!-- SCREEN 1 -->
+  <g class="screen-1" transform="translate(24, 90)">
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">sysinfo --identity</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="key">subject     :</tspan> <tspan class="val">Rofikul Huda</tspan> <tspan class="dim">(@rfypych)</tspan></text>
+    <text x="0" y="52" class="code-text"><tspan class="key">location    :</tspan> <tspan class="str">Indonesia (WIB • UTC+07:00)</tspan></text>
+    <text x="0" y="76" class="code-text"><tspan class="key">focus       :</tspan> <tspan class="str">Full-Stack Architecture, Application Security, Distributed Tooling</tspan></text>
+    <text x="0" y="100" class="code-text"><tspan class="key">core_stack  :</tspan> <tspan class="tag">TypeScript</tspan><tspan class="dim">, </tspan><tspan class="tag">Node.js</tspan><tspan class="dim">, </tspan><tspan class="tag">Python</tspan><tspan class="dim">, </tspan><tspan class="tag">Go</tspan><tspan class="dim">, </tspan><tspan class="tag">Linux/Proxmox</tspan></text>
+    <text x="0" y="124" class="code-text"><tspan class="key">philosophy  :</tspan> <tspan class="str">"Less abstraction, zero bloat, high resilience"</tspan></text>
+    <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
+    <text x="0" y="172" class="code-text"><tspan class="key">status      :</tspan> <tspan class="success pulse">●</tspan> <tspan class="str">Online • Systems nominal • Ed25519 identity verified</tspan></text>
+    <text x="0" y="210" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="199" width="7" height="13" class="cursor" /></text>
+  </g>
+
+  <!-- SCREEN 2 -->
+  <g class="screen-2" transform="translate(24, 90)">
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">tree --subsystems</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="dim">├── [0x01]</tspan> <tspan class="val">web_foundations</tspan> <tspan class="dim">:</tspan> <tspan class="str">React, Next.js, Fastify, High-Throughput REST/gRPC</tspan></text>
+    <text x="0" y="52" class="code-text"><tspan class="dim">├── [0x02]</tspan> <tspan class="val">app_security</tspan>    <tspan class="dim">:</tspan> <tspan class="str">Vulnerability Assessment, OSINT Tooling, Surface Hardening</tspan></text>
+    <text x="0" y="76" class="code-text"><tspan class="dim">├── [0x03]</tspan> <tspan class="val">infra_systems</tspan>   <tspan class="dim">:</tspan> <tspan class="str">Proxmox KVM / LXC, Docker, UFW/iptables, Debian/Ubuntu</tspan></text>
+    <text x="0" y="100" class="code-text"><tspan class="dim">└── [0x04]</tspan> <tspan class="val">persistence</tspan>     <tspan class="dim">:</tspan> <tspan class="str">PostgreSQL, Redis, SQLite, Vector stores</tspan></text>
+    <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
+    <text x="0" y="172" class="code-text"><tspan class="key">dispatch    :</tspan> <tspan class="dim">[web] </tspan><tspan class="val">rofikul.vercel.app</tspan> <tspan class="dim">• [wire] </tspan><tspan class="val">t.me/rfyycrnge</tspan></text>
+    <text x="0" y="210" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="199" width="7" height="13" class="cursor" /></text>
+  </g>
+
+  <!-- SCREEN 3 -->
+  <g class="screen-3" transform="translate(24, 90)">
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ping --cluster --all-nodes</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="dim">[node-01]</tspan> <tspan class="val">vps-master</tspan>  <tspan class="dim">[157.15.1.184:51515]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">18.4ms</tspan> <tspan class="success">● ACK</tspan></text>
+    <text x="0" y="52" class="code-text"><tspan class="dim">[node-02]</tspan> <tspan class="val">vps-worker</tspan>  <tspan class="dim">[157.15.1.184:55551]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">19.1ms</tspan> <tspan class="success">● ACK</tspan></text>
+    <text x="0" y="76" class="code-text"><tspan class="dim">[node-03]</tspan> <tspan class="val">edge-gateway</tspan><tspan class="dim">[rofikul.vercel.app]</tspan> <tspan class="key">RTT:</tspan> <tspan class="str">14.2ms</tspan> <tspan class="success">● ACK</tspan></text>
+    <text x="0" y="100" class="code-text"><tspan class="key">cluster_load:</tspan> <tspan class="str">0.11, 0.08, 0.05</tspan> <tspan class="dim">| </tspan><tspan class="key">mem_usage:</tspan> <tspan class="str">18.4%</tspan> <tspan class="dim">| </tspan><tspan class="key">packet_loss:</tspan> <tspan class="success">0.0%</tspan></text>
+    <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
+    <text x="0" y="172" class="code-text"><tspan class="key">diagnostics :</tspan> <tspan class="str">All virtual machines responding on Proxmox NAT matrix</tspan></text>
+    <text x="0" y="210" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="199" width="7" height="13" class="cursor" /></text>
+  </g>
+
+  <!-- SCREEN 4 -->
+  <g class="screen-4" transform="translate(24, 90)">
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">automata --seed 0x7a3f8c --rule B3/S23</tspan></text>
+    <text x="0" y="28" class="code-text" fill="#7ee787">░░░░░░░░░░░███░░░░░░█████░░░░█░███░░░░░░░░░░░░░░░░</text>
+    <text x="0" y="48" class="code-text" fill="#7ee787">░░░░░░░█░░░█░░█░░░░███░█░░░░█░░░░░░░░██░░░░░░░░░░░</text>
+    <text x="0" y="68" class="code-text" fill="#7ee787">░░░░░░░░░░█░░░░░░░░░░░░█░█░██░░░░░░░░░░██░░░░░░█░░</text>
+    <text x="0" y="88" class="code-text" fill="#7ee787">░░░░░░░░░██░░░░░░░░░░█░█░░░░░░░░░░░░░█░██░░░░░░█░█</text>
+    <text x="0" y="108" class="code-text" fill="#7ee787">░░░░░░░░░░░░░░░░░░░█░█░██░░░░░░░░░░█░█░░█░░░░░░░░░</text>
+    <text x="0" y="128" class="code-text" fill="#7ee787">░░░░░░░░░░░░░░░░░██░░░██░░░░░░░░░█░░░░░░██░░░░░░░░</text>
+    <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
+    <text x="0" y="172" class="code-text"><tspan class="key">state       :</tspan> <tspan class="str">Evolving cellular matrix • Continuous mutation cycle</tspan></text>
+    <text x="0" y="210" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="199" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>
