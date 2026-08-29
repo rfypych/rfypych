@@ -1,9 +1,6 @@
-<div align="center">
+### Rofikul Huda
 
-<img src="./card.svg?v=1788034615" alt="Terminal" width="800" />
+Developer based in Indonesia. Focused on building web applications and exploring security & systems.
 
-<br/><br/>
-
-[Website](https://rofikul.vercel.app/) &nbsp;&nbsp;&nbsp;&nbsp; [Telegram](https://t.me/rfyycrnge) &nbsp;&nbsp;&nbsp;&nbsp; [Email](mailto:rofikulhuda244@gmail.com)
-
-</div>
+- **Focus:** Full-stack development, application security, open-source tooling
+- **Links:** [Website](https://rofikul.vercel.app/) • [Telegram](https://t.me/rfyycrnge) • [Email](mailto:rofikulhuda244@gmail.com)
