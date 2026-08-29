@@ -8,5 +8,5 @@ Developer based in Indonesia. Focused on building web applications and exploring
 <br/>
 
 <p align="left">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rfypych&theme=github-compact&hide_border=true&hide_title=true&area=true&color=58a6ff" width="100%" alt="Activity Line" />
+  <img src="https://github-profile-trophy.vercel.app/?username=rfypych&theme=flat&no-frame=true&no-bg=true&column=6" alt="Trophies" />
 </p>
