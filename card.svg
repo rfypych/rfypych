@@ -1,4 +1,4 @@
-<svg width="800" height="260" viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
 
@@ -7,12 +7,14 @@
     .dot { fill: #383e47; }
     .title { fill: #7d8590; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; }
 
-    .code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; }
+    .code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }
     .prompt { fill: #58a6ff; font-weight: 600; }
     .cmd { fill: #e6edf3; font-weight: 500; }
-    .name { fill: #ffffff; font-weight: 600; font-size: 14px; }
-    .text { fill: #c9d1d9; }
-    .dim { fill: #7d8590; }
+    
+    .k { fill: #7ee787; }
+    .s { fill: #a5d6ff; }
+    .b { fill: #79c0ff; }
+    .p { fill: #7d8590; }
 
     @keyframes blink {
       0%, 49% { opacity: 1; }
@@ -24,7 +26,7 @@
     }
   </style>
 
-  <rect x="1" y="1" width="798" height="258" rx="6" class="bg" />
+  <rect x="1" y="1" width="798" height="418" rx="6" class="bg" />
   <path d="M 1 7 Q 1 1 7 1 L 793 1 Q 799 1 799 7 L 799 30 L 1 30 Z" class="header" />
   
   <circle cx="16" cy="15" r="4" class="dot" />
@@ -33,30 +35,53 @@
 
   <text x="400" y="19" text-anchor="middle" class="title">rfypych@workspace:~</text>
 
-  <g transform="translate(24, 58)">
+  <g transform="translate(24, 56)">
     <text x="0" y="0" class="code">
-      <tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan>
-    </text>
-    <text x="0" y="24" class="code">
-      <tspan class="name">Rofikul Huda</tspan>
+      <tspan class="prompt">❯</tspan> <tspan class="cmd">cat profile.json</tspan>
     </text>
 
-    <text x="0" y="60" class="code">
-      <tspan class="prompt">❯</tspan> <tspan class="cmd">cat about.txt</tspan>
+    <text x="0" y="24" class="code"><tspan class="b">{</tspan></text>
+    
+    <text x="18" y="46" class="code">
+      <tspan class="k">"name"</tspan><tspan class="p">: </tspan><tspan class="s">"Rofikul Huda"</tspan><tspan class="p">,</tspan>
     </text>
-    <text x="0" y="84" class="code">
-      <tspan class="text">Developer based in Indonesia. Focused on building web applications and exploring security &amp; systems.</tspan>
+    
+    <text x="18" y="68" class="code">
+      <tspan class="k">"bio"</tspan><tspan class="p">: </tspan><tspan class="s">"Developer based in Indonesia. Focused on web applications &amp; systems security."</tspan><tspan class="p">,</tspan>
     </text>
+    
+    <text x="18" y="90" class="code">
+      <tspan class="k">"focus"</tspan><tspan class="p">: </tspan><tspan class="b">[</tspan>
+    </text>
+    <text x="36" y="112" class="code">
+      <tspan class="s">"Full-stack development"</tspan><tspan class="p">,</tspan>
+    </text>
+    <text x="36" y="134" class="code">
+      <tspan class="s">"Application security"</tspan><tspan class="p">,</tspan>
+    </text>
+    <text x="36" y="156" class="code">
+      <tspan class="s">"Open-source tooling"</tspan>
+    </text>
+    <text x="18" y="178" class="code"><tspan class="b">]</tspan><tspan class="p">,</tspan></text>
 
-    <text x="0" y="120" class="code">
-      <tspan class="prompt">❯</tspan> <tspan class="cmd">cat focus.txt</tspan>
+    <text x="18" y="200" class="code">
+      <tspan class="k">"contact"</tspan><tspan class="p">: </tspan><tspan class="b">{</tspan>
     </text>
-    <text x="0" y="144" class="code">
-      <tspan class="text">Full-stack development, application security, open-source tooling</tspan>
+    <text x="36" y="222" class="code">
+      <tspan class="k">"website"</tspan><tspan class="p">: </tspan><tspan class="s">"https://rofikul.vercel.app"</tspan><tspan class="p">,</tspan>
     </text>
+    <text x="36" y="244" class="code">
+      <tspan class="k">"telegram"</tspan><tspan class="p">: </tspan><tspan class="s">"https://t.me/rfyycrnge"</tspan><tspan class="p">,</tspan>
+    </text>
+    <text x="36" y="266" class="code">
+      <tspan class="k">"email"</tspan><tspan class="p">: </tspan><tspan class="s">"rofikulhuda244@gmail.com"</tspan>
+    </text>
+    <text x="18" y="288" class="code"><tspan class="b">}</tspan></text>
 
-    <text x="0" y="180" class="code">
-      <tspan class="prompt">❯</tspan> <rect x="14" y="169" width="7" height="13" class="cursor" />
+    <text x="0" y="310" class="code"><tspan class="b">}</tspan></text>
+
+    <text x="0" y="340" class="code">
+      <tspan class="prompt">❯</tspan> <rect x="14" y="329" width="7" height="13" class="cursor" />
     </text>
   </g>
 </svg>
