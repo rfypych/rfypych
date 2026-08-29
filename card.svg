@@ -1,21 +1,22 @@
-<svg width="800" height="350" viewBox="0 0 800 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="290" viewBox="0 0 800 290" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
 
-    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 8px; }
-    .header-bar { fill: #161b22; stroke: #30363d; stroke-width: 1; }
-    .title-text { fill: #7d8590; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 500; }
-    
-    .tab-btn { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; }
-    .code-text { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 6px; }
+    .header { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+    .dot { fill: #383e47; }
+    .title { fill: #7d8590; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; }
 
-    .prompt { fill: #58a6ff; font-weight: 700; }
-    .cmd { fill: #e6edf3; font-weight: 600; }
-    .key { fill: #7d8590; font-weight: 500; }
-    .val { fill: #58a6ff; font-weight: 500; }
-    .str { fill: #c9d1d9; }
-    .dim { fill: #484f58; }
-    .tag { fill: #d2a8ff; }
+    .code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; }
+    .user { fill: #58a6ff; font-weight: 500; }
+    .path { fill: #7d8590; }
+    .symbol { fill: #7d8590; }
+    .cmd { fill: #e6edf3; font-weight: 500; }
+    .out { fill: #c9d1d9; }
+    .json-key { fill: #7ee787; }
+    .json-str { fill: #a5d6ff; }
+    .json-bracket { fill: #79c0ff; }
+    .json-punc { fill: #7d8590; }
 
     @keyframes blink {
       0%, 49% { opacity: 1; }
@@ -27,28 +28,44 @@
     }
   </style>
 
-  <rect x="1" y="1" width="798" height="348" rx="8" class="bg" />
-  <path d="M 1 9 Q 1 1 9 1 L 791 1 Q 799 1 799 9 L 799 36 L 1 36 Z" class="header-bar" />
+  <rect x="1" y="1" width="798" height="288" rx="6" class="bg" />
+  <path d="M 1 7 Q 1 1 7 1 L 793 1 Q 799 1 799 7 L 799 30 L 1 30 Z" class="header" />
+  
+  <circle cx="16" cy="15" r="4" class="dot" />
+  <circle cx="28" cy="15" r="4" class="dot" />
+  <circle cx="40" cy="15" r="4" class="dot" />
 
-  <text x="24" y="22" class="title-text">rfypych@workspace ~ zsh</text>
+  <text x="400" y="19" text-anchor="middle" class="title">rfypych@workspace:~</text>
 
-  <g transform="translate(24, 52)">
-    <text x="0" y="0" class="tab-btn" fill="#484f58">[01: WHOAMI]</text>
-    <text x="120" y="0" class="tab-btn" fill="#484f58">[02: STACK]</text>
-    <text x="230" y="0" class="tab-btn" fill="#484f58">[03: PING]</text>
-    <text x="330" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
-    <text x="460" y="0" class="tab-btn" fill="#58a6ff">[05: UNAME]</text>
-    <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
-  </g>
+  <g transform="translate(20, 56)">
+    <text x="0" y="0" class="code">
+      <tspan class="user">rfypych@workspace</tspan><tspan class="symbol">:</tspan><tspan class="path">~</tspan><tspan class="symbol">$</tspan> <tspan class="cmd">whoami</tspan>
+    </text>
+    <text x="0" y="22" class="code">
+      <tspan class="out">Rofikul Huda</tspan>
+    </text>
 
-  <g transform="translate(24, 90)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uname -srmo</tspan></text>
-    <text x="0" y="28" class="code-text"><tspan class="str">Linux 6.8.0-generic x86_64 GNU/Linux</tspan></text>
-    <text x="0" y="60" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uptime</tspan></text>
-    <text x="0" y="88" class="code-text"><tspan class="str">up 42 days, 12:30, 1 user, load average: 0.12, 0.08, 0.05</tspan></text>
-    <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="172" class="code-text"><tspan class="key">shell       :</tspan> <tspan class="str">zsh 5.9</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: uname' at 2026-08-29 16:21 UTC</tspan></text>
-    <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
+    <text x="0" y="54" class="code">
+      <tspan class="user">rfypych@workspace</tspan><tspan class="symbol">:</tspan><tspan class="path">~</tspan><tspan class="symbol">$</tspan> <tspan class="cmd">cat profile.json</tspan>
+    </text>
+    
+    <text x="0" y="76" class="code"><tspan class="json-bracket">{</tspan></text>
+    <text x="16" y="96" class="code">
+      <tspan class="json-key">"role"</tspan><tspan class="json-punc">: </tspan><tspan class="json-str">"Full-Stack Development &amp; Systems Security"</tspan><tspan class="json-punc">,</tspan>
+    </text>
+    <text x="16" y="116" class="code">
+      <tspan class="json-key">"location"</tspan><tspan class="json-punc">: </tspan><tspan class="json-str">"Indonesia (UTC+07:00)"</tspan><tspan class="json-punc">,</tspan>
+    </text>
+    <text x="16" y="136" class="code">
+      <tspan class="json-key">"stack"</tspan><tspan class="json-punc">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-str">"TypeScript"</tspan><tspan class="json-punc">, </tspan><tspan class="json-str">"Node.js"</tspan><tspan class="json-punc">, </tspan><tspan class="json-str">"Python"</tspan><tspan class="json-punc">, </tspan><tspan class="json-str">"Go"</tspan><tspan class="json-punc">, </tspan><tspan class="json-str">"Linux"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punc">,</tspan>
+    </text>
+    <text x="16" y="156" class="code">
+      <tspan class="json-key">"focus"</tspan><tspan class="json-punc">: </tspan><tspan class="json-str">"Minimalist architectures, web systems &amp; security analysis"</tspan>
+    </text>
+    <text x="0" y="176" class="code"><tspan class="json-bracket">}</tspan></text>
+
+    <text x="0" y="208" class="code">
+      <tspan class="user">rfypych@workspace</tspan><tspan class="symbol">:</tspan><tspan class="path">~</tspan><tspan class="symbol">$</tspan> <rect x="156" y="197" width="7" height="13" class="cursor" />
+    </text>
   </g>
 </svg>
