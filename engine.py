@@ -92,10 +92,11 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
     parts = action.split()
     cmd_name = parts[0] if parts else "whoami"
 
-    t1_col, t2_col, t3_col, t4_col = "#484f58", "#484f58", "#484f58", "#484f58"
+    # Tab colors: exactly 5 tabs
+    t1_col, t2_col, t3_col, t4_col, t5_col = "#484f58", "#484f58", "#484f58", "#484f58", "#484f58"
     body_elements = []
 
-    if cmd_name in ["whoami", "sysinfo", "status", "bio"]:
+    if cmd_name in ["whoami", "sysinfo", "bio", "status"]:
         t1_col = "#58a6ff"
         body_elements = [
             '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan></text>',
@@ -132,7 +133,7 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
             '<text x="0" y="172" class="code-text"><tspan class="key">summary     :</tspan> <tspan class="str">3 packets transmitted, 3 received, 0% packet loss</tspan></text>'
         ]
-    elif cmd_name in ["automata", "life", "conway"]:
+    elif cmd_name in ["automata", "life", "conway", "evolve"]:
         t4_col = "#58a6ff"
         gen = state.get("generation", 1)
         seed = state.get("seed_hash", "0x7a3f8c")
@@ -147,7 +148,8 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
             '<line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />',
             f'<text x="0" y="172" class="code-text"><tspan class="key">state       :</tspan> <tspan class="str">generation {gen} (B3/S23)</tspan></text>'
         ]
-    elif cmd_name in ["uname", "neofetch"]:
+    elif cmd_name in ["uname", "neofetch", "uptime"]:
+        t5_col = "#58a6ff"
         body_elements = [
             '<text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">uname -srmo</tspan></text>',
             '<text x="0" y="28" class="code-text"><tspan class="str">Linux 6.8.0-generic x86_64 GNU/Linux</tspan></text>',
@@ -202,9 +204,10 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
 
   <g transform="translate(24, 52)">
     <text x="0" y="0" class="tab-btn" fill="{t1_col}">[01: WHOAMI]</text>
-    <text x="130" y="0" class="tab-btn" fill="{t2_col}">[02: STACK]</text>
-    <text x="250" y="0" class="tab-btn" fill="{t3_col}">[03: PING]</text>
-    <text x="360" y="0" class="tab-btn" fill="{t4_col}">[04: AUTOMATA]</text>
+    <text x="120" y="0" class="tab-btn" fill="{t2_col}">[02: STACK]</text>
+    <text x="230" y="0" class="tab-btn" fill="{t3_col}">[03: PING]</text>
+    <text x="330" y="0" class="tab-btn" fill="{t4_col}">[04: AUTOMATA]</text>
+    <text x="460" y="0" class="tab-btn" fill="{t5_col}">[05: UNAME]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
@@ -243,7 +246,7 @@ def main():
     cmd = args.issue_title.strip() or "run: whoami"
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    if any(k in cmd.lower() for k in ["automata", "life", "conway"]):
+    if any(k in cmd.lower() for k in ["automata", "life", "conway", "evolve"]):
         state["grid"] = step_grid(state.get("grid") or init_grid("default"))
         state["generation"] = state.get("generation", 1) + 1
     elif not state.get("grid"):
@@ -260,7 +263,7 @@ def main():
         f.write(svg_content)
 
     update_readme_cache_buster()
-    print(f"[+] Rendered card.svg for '{cmd}' by @{user} with cache-busting URL in README.md")
+    print(f"[+] Rendered card.svg for '{cmd}' by @{user}")
 
 if __name__ == "__main__":
     main()
