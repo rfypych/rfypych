@@ -34,21 +34,21 @@
 
   <g transform="translate(24, 52)">
     <text x="0" y="0" class="tab-btn" fill="#484f58">[01: WHOAMI]</text>
-    <text x="130" y="0" class="tab-btn" fill="#58a6ff">[02: STACK]</text>
-    <text x="250" y="0" class="tab-btn" fill="#484f58">[03: PING]</text>
+    <text x="130" y="0" class="tab-btn" fill="#484f58">[02: STACK]</text>
+    <text x="250" y="0" class="tab-btn" fill="#58a6ff">[03: PING]</text>
     <text x="360" y="0" class="tab-btn" fill="#484f58">[04: AUTOMATA]</text>
     <line x1="0" y1="12" x2="752" y2="12" stroke="#21262d" stroke-width="1" />
   </g>
 
   <g transform="translate(24, 90)">
-    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat stack.txt</tspan></text>
-    <text x="0" y="28" class="code-text"><tspan class="key">frontend    :</tspan> <tspan class="str">React, Next.js, Tailwind CSS</tspan></text>
-    <text x="0" y="52" class="code-text"><tspan class="key">backend     :</tspan> <tspan class="str">Node.js, Fastify, Express, Python</tspan></text>
-    <text x="0" y="76" class="code-text"><tspan class="key">security    :</tspan> <tspan class="str">Application Security, OSINT, Threat Modeling</tspan></text>
-    <text x="0" y="100" class="code-text"><tspan class="key">infra       :</tspan> <tspan class="str">Linux (Debian/Ubuntu), Docker, Nginx, PostgreSQL</tspan></text>
+    <text x="0" y="0" class="code-text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ping -c 3 1.1.1.1</tspan></text>
+    <text x="0" y="28" class="code-text"><tspan class="dim">PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.</tspan></text>
+    <text x="0" y="52" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time=13.2 ms</tspan></text>
+    <text x="0" y="76" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=2 ttl=57 time=13.8 ms</tspan></text>
+    <text x="0" y="100" class="code-text"><tspan class="dim">64 bytes from 1.1.1.1: icmp_seq=3 ttl=57 time=15.4 ms</tspan></text>
     <line x1="0" y1="146" x2="752" y2="146" stroke="#21262d" stroke-width="1" />
-    <text x="0" y="172" class="code-text"><tspan class="key">tools       :</tspan> <tspan class="str">Git, Bash, Neovim, VS Code</tspan></text>
-    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: stack' at 2026-08-29 16:17 UTC</tspan></text>
+    <text x="0" y="172" class="code-text"><tspan class="key">summary     :</tspan> <tspan class="str">3 packets transmitted, 3 received, 0% packet loss</tspan></text>
+    <text x="0" y="202" class="code-text"><tspan class="dim">last_execution: @rfypych ran 'run: ping' at 2026-08-29 16:18 UTC</tspan></text>
     <text x="0" y="232" class="code-text"><tspan class="prompt">❯</tspan> <rect x="14" y="221" width="7" height="13" class="cursor" /></text>
   </g>
 </svg>
