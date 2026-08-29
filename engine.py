@@ -4,10 +4,12 @@ import hashlib
 import json
 import os
 import random
+import re
 from datetime import datetime, timezone
 
 STATE_FILE = "state.json"
 SVG_FILE = "card.svg"
+README_FILE = "README.md"
 
 GRID_ROWS = 6
 GRID_COLS = 50
@@ -215,6 +217,21 @@ def generate_svg(cmd: str, user: str, timestamp: str, state: dict) -> str:
 
     return svg_content
 
+def update_readme_cache_buster():
+    if not os.path.exists(README_FILE):
+        return
+    with open(README_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    ts = int(datetime.now().timestamp())
+    new_content = re.sub(
+        r'<img\s+src="\./card\.svg(?:\?v=\d+)?"',
+        f'<img src="./card.svg?v={ts}"',
+        content
+    )
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--issue-title", type=str, default="run: whoami")
@@ -242,7 +259,8 @@ def main():
     with open(SVG_FILE, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
-    print(f"[+] Rendered card.svg for '{cmd}' by @{user}")
+    update_readme_cache_buster()
+    print(f"[+] Rendered card.svg for '{cmd}' by @{user} with cache-busting URL in README.md")
 
 if __name__ == "__main__":
     main()
