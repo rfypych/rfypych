@@ -7,24 +7,27 @@ Focused on building minimal, resilient web architectures and exploring system se
 
 <!-- START_AUTOMATA -->
 ```text
-[cellular automata] gen: 7 | seed: 0x7a3f8c | rule: B3/S23
-░░░░░░░░░░░░░░░█░░█░░░░░░░█░░░░░█░░█░███░░░░░░░░░░
-░░░░░░░░░░░░░░░░████░██░░░░██░░░█░░░░█░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░███░░░█░░░░░░░█░░░██░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░█░░█░░░░█░░██░░░█░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░█░░░░░█░░░░░░███░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░██░░█░░░░░█░██░░░░░░░░█░██░░░░░░░
-░░░░░░░░░░░░░░░█████░█░░░░█░█░██░░█░░░░█░██░░░░░░░
+[cellular automata] gen: 8 | seed: 0x7a3f8c | rule: B3/S23
+░░░░░░░░░░░░░░░█░░░░░██░░░█░██░░██░░██░██░░░░░░░░░
+░░░░░░░░░░░░░░░░█░░░░█░░░░░█░░░███░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░█░██░░░░░░░██░░░███░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░█░░░░███░░░░░░░░█░░█░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░██░░░░░░░░░░█░████░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░█░░░░░░███░░░█░░░░░░░██░░░░░░░
+░░░░░░░░░░░░░░░█░░░██░░░░░█░█░██░░░░░░░█░██░░░░░░░
 ```
 <!-- END_AUTOMATA -->
 
 <!-- START_TERMINAL -->
 ```text
-rfypych@terminal:~$ run: evolve-life
-[ok] conway cellular automata advanced by 1 generation.
-[ok] state vector recalculation complete.
+rfypych@terminal:~$ run: ping
+PING 157.15.1.184 (vps node): 56 data bytes
+64 bytes from 157.15.1.184: icmp_seq=1 ttl=58 time=15.4 ms
+64 bytes from 157.15.1.184: icmp_seq=2 ttl=58 time=14.1 ms
+--- 157.15.1.184 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
 
-last interaction: @rfypych executed 'run: evolve-life' at 2026-08-29 15:46 UTC
+last interaction: @Ssputra executed 'run: ping' at 2026-08-29 15:49 UTC
 ```
 <!-- END_TERMINAL -->
 
