@@ -1,6 +1,6 @@
 # Rofikul Huda
 ### Security Researcher & Web Developer
-[Portfolio](https://rofikul.vercel.app) | [LinkedIn](https://linkedin.com/i/rofikulhuda) | Handle: `0xrphy` (pronounced: *zero x ar-phi*)
+[Portfolio](https://rofikul.vercel.app) | [LinkedIn](https://linkedin.com/in/rofikulhuda) | Handle: `0xrphy` (pronounced: *zero x ar-phi*)
 
 ---
 
