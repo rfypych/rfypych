@@ -4,7 +4,7 @@
 
 ---
 
-An Indonesian-based security researcher and developer focused on secure application architecture and vulnerability research. The digital alias `0xrphy` reflects a strong personal interest in philosophy, emphasizing critical thinking and fresh perspectives when analyzing complex systems.
+An Indonesian-based security researcher and developer focused on secure application architecture and vulnerability research. The digital alias `0xrphy` reflects a strong personal interest in philosophy, emphasizing critical thinking and fresh perspectives.
 
 ## Institutional Recognitions
 *   **1st Place** — BMKG Bug Bounty 2026
