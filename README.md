@@ -9,4 +9,5 @@ An Indonesian-based security researcher and developer focused on secure applicat
 ## Institutional Recognitions
 *   **1st Place** — BMKG Bug Bounty 2026
 *   **2nd Place** — Mahavation 2025
+*   **Drexel University** — Hall of Fame 2026
 *   More: [Portfolio](https://rofikul.vercel.app)
